@@ -1,0 +1,456 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");/*IMPORT DE ÍCONOS DE BOOTSTRAP*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Oswald:wght@600;700&display=swap');/*IMPORT DE TIPOGRAFÍAS DE GOOGLE*/
+
+body{
+    background-color: white;
+}
+
+.desplazar{
+    display: flex;
+    overflow-x: scroll;
+
+}
+
+
+
+.desplazar::-webkit-scrollbar{
+    height: auto;
+}
+
+.desplazar::-webkit-scrollbar-thumb{
+    background-color: black;
+    border-radius: 20px;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Oswals", "sans-serif";
+    text-align: "center";
+    margin-top: 2rem;
+}
+
+
+
+h2 {
+    font-size: 40px;  /*1rem es igual a 16px */
+    font-weight: 700;
+    color: #2f4e6f;
+}
+
+h3{
+    color: #2f4e6f;
+    margin: 15px;
+}
+
+h5{
+    font-size: 17px;
+}
+
+
+p {
+    font-family: 'Open Sans', 'sans-serif';
+    font-size: 16px;
+    text-align: justify;
+    color: #98b1c4;
+    
+}
+
+a.nav-link{
+    color: white;
+}
+
+a:hover, a:active, a.active {
+    color: #e15119 !important;
+}
+
+.marcas a:hover h3, .footerRedes a:active h3{
+    color: #e15119 !important;
+}
+
+.bg-ColorAnadirC{
+    background-color: black;
+    border-radius: 5px;
+    
+
+}
+
+.center {
+    margin: auto;
+    width: 300px; 
+    
+}
+
+.Relojes{
+    text-align: center;
+}
+
+.Relojes1{
+    text-align: center;
+
+
+}
+
+.Relojes2{
+    text-align: center;
+
+}
+
+
+
+
+.bg-Blanco{
+    background-color: black;
+}
+
+.text-center{
+    font-family: 'Open Sans', 'sans-serif';
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 50px;
+    
+    
+}
+
+.acomodo{
+    text-align: center;
+    
+}
+.acomodo a{
+    color: white;
+}
+
+.footerRedes a:hover i, .footerRedes a:active i{
+    color: #e15119 !important;
+}
+
+.copyright{
+   padding-top: 30px;
+   margin-bottom: 10px;
+}
+
+.card{
+    overflow: hidden;
+    background: white;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+    cursor: default;
+    transition: all 460ms ease;
+    
+}
+
+.card:hover{
+    transform: translatex(-2%);
+}
+
+.btn-Blanco{
+    background: white;
+    font-size: 25px;
+}
+
+.centrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.margenesCard{
+    border: solid 3px rgb(45, 36, 36);
+    box-shadow: 0px 1px 10px rgba(0,0,0,2);
+    overflow: hidden;
+    border-radius: 10px;
+    width: 65%;
+}
+
+.imgDeseados{
+    width: 260px;
+}
+
+.text-AzulOscuro2{
+    color: #2f4e6f;
+    font-size: 25px;
+}
+
+.text-AzulClaro2{
+    color: #98b1c4;
+    font-size: 19px;
+}
+
+.centerDeseados {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    margin: auto;
+}
+
+.bg-ColorAnadirC2{
+    background-color: black;
+    border-radius: 3px;
+}
+
+/*Estilos de columnas
+*/
+.columnaTarget{
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 35px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+.text-AzulMedio{
+    color: #98b1c4;
+}
+
+.text-negro {
+    color: #0000;
+}
+
+.bg-AzulPitufo {
+    background-color: black;
+    color: #e15119;
+}
+
+.txt-AzulPitufo {
+    color:#05ade4;
+}
+
+.btn-Blanco{
+    background: white;
+    font-size: 25px;
+}
+
+.modalDialog {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.6);
+	opacity:0;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+    
+}
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+.modalDialog > div {
+	width: 800px;
+    height: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 50px 30px 13px 350px;
+	border-radius: 10px;
+	background: #fff;
+    transition: opacity 400ms ease-in;
+    background-image: url(../imagenes/CardReloj1.png);
+   background-size: 380px;
+   background-repeat: no-repeat;
+   background-position: -20px;
+}
+
+
+
+.close {
+	background: black;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	border-radius: 12px;
+	box-shadow: 1px 1px 3px #000;
+}
+
+.container-all{
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    position: fixed;
+   visibility: hidden;
+   opacity: 0;
+   transition: all 600ms;
+}
+
+.container-all:target{
+    background: rgba(0,0,0,0.8);
+    visibility: visible;
+    opacity: 1;
+}
+
+.container-all:target .ventana{
+    top: 50%;
+    left: 50%;
+    visibility: visible;
+    transform: translate(-50%, -50%);
+}
+
+.ventana{
+    width: 100%;
+    max-width: 800px;
+    height: 500px;
+    position: relative;
+    display: flex;
+    top: -80%;
+    left: -80%;
+    visibility: hidden;
+    transform: translate(-50%, -50%);
+    background: white;
+}
+
+.imagen{
+    width: 40%;
+    background-image: url(../imagenes/CardReloj1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.container-text{
+    width: 60%;
+    padding: 50px;
+    overflow-y: auto;
+
+}
+
+.container-text h2{
+    font-size: 30px;
+}
+
+.container-text p{
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.btn-cerrar-ventana{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    right: -20px;
+    top: -20px;
+    background: black;
+    color: white;
+    border-radius: 50%;
+    line-height: 10px;
+    padding: 20px;
+}
+
+@media screen and (max-width:900px){
+    .ventana{
+        flex-direction: column;
+        height: 100%;
+        max-height: 800px;
+
+    }
+
+    .imagen{
+        width: 100%;
+        height: 40%;
+
+    }
+
+    .container-text{
+        width: 100%;
+        height: 60%;
+        padding: 80px;
+
+    }
+
+    .container-text h2{
+        font-size: 20px;
+    }
+
+    .container-text p{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:500px){
+   
+
+    .container-text{
+        padding: 20px;
+
+    }
+
+    .container-text h2{
+        font-size: 20px;
+    }
+
+    .container-text h2{
+        font-size: 12px;
+    }
+}
+
+*/
+
+
+
+
+
+
+
+/*.centrar{
+    display: flex;
+    justify-content: flex-center;
+}
+*/
+
+/*
+#navbar-nav{
+    order: 2
+    
+}
+
+#navbar-brand{
+    order: 1
+}*/
+
+
+
